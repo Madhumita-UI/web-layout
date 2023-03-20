@@ -71,7 +71,14 @@
 <!-- ********|| ONPAGE JAVASCRIPTS STARTS ||******** -->
 <script defer="defer" type="text/javascript">
 	$(document).ready(function(){
-		
+		$('.btn-menu').on('click', function(){
+	$('header .navigation-wrap').addClass('active');
+	$('header .menu-overlay').addClass('active');
+});
+$('header .menu-overlay').on('click', function(){
+	$('header .navigation-wrap').removeClass('active');
+	$(this).removeClass('active');
+});
 	});
 </script>
 <!-- ********|| ONPAGE JAVASCRIPTS ENDS ||******** -->
